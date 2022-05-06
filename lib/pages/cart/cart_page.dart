@@ -238,7 +238,6 @@ class CartPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-
                 padding: EdgeInsets.all(Dimensions.ratio * 15),
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -246,8 +245,7 @@ class CartPage extends StatelessWidget {
                     BoxShadow(
                         color: Colors.black45,
                         blurRadius: Dimensions.ratio * 5.0,
-                        offset:
-                        Offset(Dimensions.ratio * 5, Dimensions.ratio * 5)),
+                        offset: Offset(Dimensions.ratio * 5, Dimensions.ratio * 5)),
                   ],
                   borderRadius:
                   BorderRadius.all(Radius.circular(Dimensions.ratio * 20)),
@@ -305,5 +303,7 @@ class CartPage extends StatelessWidget {
         );
       }),
     );
+
   }
+
 }

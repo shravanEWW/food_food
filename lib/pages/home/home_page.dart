@@ -121,6 +121,7 @@ class _HomePageState extends State<HomePage> {
       drawer: createDrawer(),
       appBar: AppBar(
         title: Text("Food App"),
+        centerTitle: true,
         backgroundColor: AppColors.mainColor,
 
       ),
@@ -171,14 +172,19 @@ class _HomePageState extends State<HomePage> {
         children: <Widget>[
           DrawerHeader(
             child: UserAccountsDrawerHeader(
+
               decoration: BoxDecoration(color: Colors.white,),
-              accountName:Text("") ,
-              accountEmail: Text( "email"),
-              currentAccountPicture: CircleAvatar(backgroundImage: NetworkImage("https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/eggs-breakfast-avocado-1296x728-header.jpg?w=1155&h=1528")),
+              accountName:Text("John Doe",style: TextStyle(color: Colors.red,)) ,
+              accountEmail: Text( "JohnDoe@gmail.com"),
+              currentAccountPicture: CircleAvatar(
+
+                  backgroundImage: NetworkImage(
+                      "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/eggs-breakfast-avocado-1296x728-header.jpg?w=1155&h=1528"
+                  )),
             ),
             decoration: BoxDecoration(
               shape: BoxShape.rectangle,
-              color: Colors.transparent,
+              color: Colors.grey,
             ),
           ),
           ListTile(

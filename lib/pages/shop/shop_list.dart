@@ -22,6 +22,7 @@ class _ShopListState extends State<ShopList> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Shop List"),
+        centerTitle: true,
         backgroundColor: AppColors.mainColor,
       ),
       body: Container(

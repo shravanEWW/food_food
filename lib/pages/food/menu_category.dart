@@ -17,6 +17,7 @@ class MenuCategory extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text("Menu Category"),
+          centerTitle: true,
           backgroundColor: AppColors.mainColor,
         ),
         body: GetBuilder<PopularProductController>(builder: (items) {
@@ -41,9 +42,11 @@ class MenuCategory extends StatelessWidget {
                               BorderRadius.circular(Dimensions.ratio * 20),
                           boxShadow: [
                             BoxShadow(
-                                color: Color(0xFFe8e8e8),
-                                blurRadius: Dimensions.ratio * 5.0,
-                                offset: Offset(Dimensions.ratio * -1,
+                                color: Colors.black45,
+                                blurRadius:
+                                Dimensions.ratio * 5.0,
+                                offset: Offset(
+                                    Dimensions.ratio * 5,
                                     Dimensions.ratio * 5)),
                           ],
                           image: DecorationImage(
